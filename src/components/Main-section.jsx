@@ -1,7 +1,6 @@
 import React from "react";
 import Filter from "./Filter";
 import Grid from "./Grid";
-
 export default function Main({ theme }) {
 	const [search, setSearch] = React.useState({ data: "" });
 	const [countries, setCountries] = React.useState([]);

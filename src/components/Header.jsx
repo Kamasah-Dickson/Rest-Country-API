@@ -22,7 +22,7 @@ export default function Header({ setTheme, theme }) {
 							src={theme ? dark : light}
 							alt="theme"
 						/>
-						<span>{theme ? "Light Mode" : "Dark Mode"}</span>
+						<span>{theme ? "Dark Mode" : "Light Mode"}</span>
 					</div>
 				</div>
 			</header>

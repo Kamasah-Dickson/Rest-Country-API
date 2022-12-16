@@ -231,6 +231,11 @@ main {
 			max-width: rem(350);
 			width: 100%;
 			cursor: pointer;
+			&:hover {
+				transform: scale(1.009);
+				transition: 0.3s ease;
+				box-shadow: 1rem 1rem 1.5rem -1rem rgba(0, 0, 0, 0.205);
+			}
 			@include trans();
 			@include breakpoints(large) {
 				width: 100%;
@@ -246,7 +251,7 @@ main {
 				}
 			}
 			.details {
-				padding: rem(15) rem(15) rem(30) rem(15);
+				padding: rem(15) rem(15) rem(30) rem(25);
 				h2 {
 					font-size: rem(18);
 					font-weight: 800;
@@ -304,10 +309,9 @@ main {
 	margin-top: rem(80);
 	.back {
 		margin: rem(25) 0 rem(40) 0;
-		box-shadow: 1rem 1rem 1rem -1rem rgba(0, 0, 0, 0.2);
+		box-shadow: 1rem 1rem 1rem -1rem rgba(0, 0, 0, 0.253);
 		cursor: pointer;
 		width: rem(30);
-		background-color: red;
 		padding: rem(3) rem(20);
 		background-color: var(--Mode-Elements);
 		border-radius: rem(30);
@@ -416,6 +420,45 @@ main {
 					}
 				}
 			}
+		}
+	}
+}
+
+.main-error {
+	display: grid;
+	height: 100vh;
+	text-align: center;
+	place-content: center;
+	a {
+		text-decoration: none;
+	}
+	h1 {
+		font-weight: 800;
+	}
+	p {
+		font-weight: 400;
+	}
+	button {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: rem(300);
+		margin-inline: auto;
+		background-color: var(--Mode-Background);
+		box-shadow: 1rem 1rem 1rem -1rem rgba(0, 0, 0, 0.2);
+		outline: none;
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.151);
+			cursor: pointer;
+		}
+		padding: rem(10);
+		margin-top: rem(30);
+		p {
+			font-size: rem(25);
+			color: var(--Mode-color-text);
+			font-weight: 400;
+			margin-left: rem(20);
+			text-transform: uppercase;
 		}
 	}
 }
