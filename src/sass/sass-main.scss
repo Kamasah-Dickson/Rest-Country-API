@@ -462,3 +462,26 @@ main {
 		}
 	}
 }
+
+.me {
+	width: rem(55);
+	height: rem4(55);
+	border-radius: 100%;
+
+	&:hover {
+		opacity: 0.7;
+		transition: 0.4s ease;
+	}
+	@include breakpoints(large) {
+		.me {
+			width: rem(50);
+			height: rem4(50);
+			border-radius: 100%;
+
+			&:hover {
+				opacity: 0.7;
+				transition: 0.4s ease;
+			}
+		}
+	}
+}

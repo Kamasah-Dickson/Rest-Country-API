@@ -11,6 +11,7 @@ export default function Header({ setTheme, theme }) {
 			<header aria-label="header">
 				<div className={theme ? "container light-mode" : "container"}>
 					<h1>Where in the world?</h1>
+
 					<div
 						className="theme-toggle"
 						aria-label={theme ? "Light Mode" : "Dark Mode"}

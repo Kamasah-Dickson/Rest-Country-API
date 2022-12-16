@@ -2,6 +2,7 @@ import React from "react";
 import searchImg from "../assets/search_FILL0_wght400_GRAD0_opsz48.svg";
 import searchImgDark from "../assets/search_FILL0_wght400_GRAD0_opsz48 copy.svg";
 import dropdown from "../assets/expand_more_FILL0_wght400_GRAD0_opsz48.svg";
+import me from "../assets/Kamasah.jpg";
 
 export default function Filter({ theme, setSearch, lists, dispatch }) {
 	const input = React.useRef(null);
@@ -15,6 +16,9 @@ export default function Filter({ theme, setSearch, lists, dispatch }) {
 
 	return (
 		<div className="filter-section">
+			<a href="https://github.com/Kamasah-Dickson/Rest-Country-API">
+				<img title="Github" className="me" src={me} alt="Github" />
+			</a>
 			<div className="input-div">
 				<div className="before">
 					<img src={theme ? searchImgDark : searchImg} alt="search" />
