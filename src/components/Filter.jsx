@@ -1,7 +1,8 @@
 import React from "react";
 import searchImg from "../assets/search_FILL0_wght400_GRAD0_opsz48.svg";
 import searchImgDark from "../assets/search_FILL0_wght400_GRAD0_opsz48 copy.svg";
-import dropdown from "../assets/expand_more_FILL0_wght400_GRAD0_opsz48.svg";
+import dropdownBlack from "../assets/expand_more_FILL0_wght400_GRAD0_opsz48.svg";
+import dropdownWhite from "../assets/expand_more_FILL0_wght400_GRAD0_opsz48 copy.svg";
 import me from "../assets/Kamasah.jpg";
 
 export default function Filter({ theme, setSearch, lists, dispatch }) {
@@ -21,7 +22,7 @@ export default function Filter({ theme, setSearch, lists, dispatch }) {
 			</a>
 			<div className="input-div">
 				<div className="before">
-					<img src={theme ? searchImgDark : searchImg} alt="search" />
+					<img src={!theme ? searchImg : searchImgDark} alt="search" />
 				</div>
 				<input
 					onChange={(e) => handleSearch(e)}
@@ -42,7 +43,11 @@ export default function Filter({ theme, setSearch, lists, dispatch }) {
 					}
 				>
 					Filter by Region <span></span>
-					<img draggable="false" src={dropdown} alt="drop-down" />
+					<img
+						draggable="false"
+						src={!theme ? dropdownBlack : dropdownWhite}
+						alt="drop-down"
+					/>
 				</div>
 				<div className={lists.show ? "filter-options show" : "filter-options"}>
 					<span
