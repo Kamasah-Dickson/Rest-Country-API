@@ -5,15 +5,15 @@ import ErrorPage from "./components/ErrorPage";
 import SingleCountry from "./components/SingleCountry";
 
 import "./sass/sass-main.scss";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<HashRouter>
+		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<App />}></Route>
 				<Route path="/:countriesID" element={<SingleCountry />}></Route>
 				<Route path="*" element={<ErrorPage />}></Route>
 			</Routes>
-		</HashRouter>
+		</BrowserRouter>
 	</React.StrictMode>
 );
