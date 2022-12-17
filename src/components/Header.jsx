@@ -1,7 +1,8 @@
 import React from "react";
 import light from "../assets/dark_mode_FILL1_wght400_GRAD0_opsz48.svg";
 import dark from "../assets/light_mode_FILL1_wght400_GRAD0_opsz48.svg";
-export default function Header({ setTheme, theme }) {
+
+export default function Header({ theme, setTheme }) {
 	const body = document.body;
 	theme
 		? body.classList.add("light-mode")

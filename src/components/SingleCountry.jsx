@@ -4,7 +4,6 @@ import light from "../assets/dark_mode_FILL1_wght400_GRAD0_opsz48.svg";
 import dark from "../assets/light_mode_FILL1_wght400_GRAD0_opsz48.svg";
 import backIconLight from "../assets/arrow_back_FILL0_wght400_GRAD0_opsz48.svg";
 import backIconDark from "../assets/arrow_back_FILL0_wght400_GRAD0_opsz48 copy.svg";
-
 export default function SingleCountry() {
 	const { countriesID } = useParams();
 	const [SingleCountry, setSingleCountry] = React.useState([]);
@@ -121,7 +120,7 @@ export default function SingleCountry() {
 									<div className="bottom">
 										<span>Border Countries</span>
 										<ul>
-											{country?.borders?.slice(0, 6).map((border) => (
+											{country?.borders?.slice(0, 5).map((border) => (
 												<li key={border}>{border}</li>
 											))}
 										</ul>
