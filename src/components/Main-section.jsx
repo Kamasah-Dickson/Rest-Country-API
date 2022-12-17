@@ -8,7 +8,6 @@ export default function Main({ theme }) {
 	const [loadData, setLoadData] = React.useState(8);
 	const [toggle, setToggle] = React.useState(false);
 	const [error, setError] = React.useState(null);
-
 	const [lists, dispatch] = React.useReducer(
 		(state, action) => {
 			switch (action.type) {
@@ -39,7 +38,7 @@ export default function Main({ theme }) {
 	}
 	return (
 		<main>
-			<div className={theme ? "container light-mode" : "container"}>
+			<div className={"container "}>
 				<Filter
 					theme={theme}
 					search={search}

@@ -5,12 +5,12 @@
 	--Mode-Background: hsl(207, 26%, 17%);
 	--Mode-input: hsla(0, 0%, 100%, 0.856);
 	--Mode-Elements: hsl(209, 23%, 22%);
-	.light-mode {
-		//done
-		--Mode-Elements: hsl(0, 0%, 100%);
-		--Mode-input: hsl(0, 0%, 52%);
-		--Mode-Background: hsl(0, 0%, 98%);
-		--Mode-Background2: hsla(0, 2%, 84%, 0.363);
-		--Mode-color-text: hsl(200, 15%, 8%);
-	}
+}
+.light-mode {
+	//done
+	--Mode-Elements: hsl(0, 0%, 100%);
+	--Mode-input: hsl(0, 0%, 52%);
+	--Mode-Background: hsl(0, 0%, 98%);
+	--Mode-Background2: hsla(0, 2%, 84%, 0.363);
+	--Mode-color-text: hsl(200, 15%, 8%);
 }

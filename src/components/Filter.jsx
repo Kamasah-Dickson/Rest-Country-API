@@ -22,7 +22,7 @@ export default function Filter({ theme, setSearch, lists, dispatch }) {
 			</a>
 			<div className="input-div">
 				<div className="before">
-					<img src={!theme ? searchImg : searchImgDark} alt="search" />
+					{<img src={!theme ? searchImg : searchImgDark} alt="search" />}
 				</div>
 				<input
 					onChange={(e) => handleSearch(e)}
@@ -42,54 +42,64 @@ export default function Filter({ theme, setSearch, lists, dispatch }) {
 						dispatch({ type: "FILTER", payload: () => !lists.show })
 					}
 				>
-					Filter by Region <span></span>
+					<span>Filter by Region</span>
 					<img
 						draggable="false"
-						src={!theme ? dropdownBlack : dropdownWhite}
+						src={!theme ? dropdownWhite : dropdownBlack}
 						alt="drop-down"
 					/>
 				</div>
 				<div className={lists.show ? "filter-options show" : "filter-options"}>
-					<span
-						tabIndex="2"
-						aria-labelledby="id"
-						id="Africa"
-						onClick={() => dispatch({ type: "AFRICA", filterId: "africa" })}
-					>
-						Africa
-					</span>
-					<span
-						tabIndex="3"
-						aria-labelledby="id"
-						id="America"
-						onClick={() => dispatch({ type: "AMERICA", filterId: "america" })}
-					>
-						America
-					</span>
-					<span
-						tabIndex="4"
-						aria-labelledby="id"
-						id="Asia"
-						onClick={() => dispatch({ type: "ASIA", filterId: "asia" })}
-					>
-						Asia
-					</span>
-					<span
-						tabIndex="5"
-						aria-labelledby="id"
-						id="Europe"
-						onClick={() => dispatch({ type: "EUROPE", filterId: "europe" })}
-					>
-						Europe
-					</span>
-					<span
-						tabIndex="6"
-						aria-labelledby="id"
-						id="Oceania"
-						onClick={() => dispatch({ type: "OCEANIA", filterId: "oceania" })}
-					>
-						Oceania
-					</span>
+					<a href="#">
+						<span
+							tabIndex="2"
+							aria-labelledby="id"
+							id="Africa"
+							onClick={() => dispatch({ type: "AFRICA", filterId: "africa" })}
+						>
+							Africa
+						</span>
+					</a>
+					<a href="#">
+						<span
+							tabIndex="3"
+							aria-labelledby="id"
+							id="America"
+							onClick={() => dispatch({ type: "AMERICA", filterId: "america" })}
+						>
+							America
+						</span>
+					</a>
+					<a href="#">
+						<span
+							tabIndex="4"
+							aria-labelledby="id"
+							id="Asia"
+							onClick={() => dispatch({ type: "ASIA", filterId: "asia" })}
+						>
+							Asia
+						</span>
+					</a>
+					<a href="#">
+						<span
+							tabIndex="5"
+							aria-labelledby="id"
+							id="Europe"
+							onClick={() => dispatch({ type: "EUROPE", filterId: "europe" })}
+						>
+							Europe
+						</span>
+					</a>
+					<a href="#">
+						<span
+							tabIndex="6"
+							aria-labelledby="id"
+							id="Oceania"
+							onClick={() => dispatch({ type: "OCEANIA", filterId: "oceania" })}
+						>
+							Oceania
+						</span>
+					</a>
 				</div>
 			</div>
 		</div>
