@@ -9,7 +9,7 @@ export default function SingleCountry() {
 	const [SingleCountry, setSingleCountry] = React.useState([]);
 	const [pending, setPending] = React.useState(true);
 	const [error, setError] = React.useState(null);
-	const [theme, setTheme] = React.useState(false);
+	const [theme, setTheme] = React.useState(true);
 
 	const url = "https://restcountries.com/v2/all";
 	React.useEffect(() => {
