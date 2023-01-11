@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL ](https://github.com/Kamasah-Dickson/Rest-Country-API)
-- Live Site URL: [Live solution](https://marvelous-scone-d5a624.netlify.app/)
+- Live Site URL: [Live solution](https://startling-crumble-ea6d3d.netlify.app/)
 
 ## My process
 
