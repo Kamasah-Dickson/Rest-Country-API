@@ -32,9 +32,9 @@ Users should be able to:
 - Toggle the color scheme between light and dark mode _(optional)_
 
 ### Screenshot
+![Light-mode](https://user-images.githubusercontent.com/86136379/216623235-467e7926-0dfa-43e1-8158-b14a6c57fa2f.png)
 
-![Mobile-screen]('../screenshots/Mobile.png')
-![Desktop-screen]('../screenshots/Desktop.png')
+![Dark-mode](https://user-images.githubusercontent.com/86136379/216623093-bf6b85cd-cfcf-4fd3-a01b-0af7174cc680.png)
 
 ### Links
 
